@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="4_files/jquery-ui.css">
+<script src="4_files/jquery-3.js"></script>
+<script src="4_files/jquery-ui.js"></script>
+<script type="text/javascript" src="4_files/unpriv.js"></script>
+<script type="text/javascript">
+  var SID="56150d3c3f95cada";
+  var NEW_SRV_ACTION_JSON_USER_STATE=175;
+  var NEW_SRV_ACTION_VIEW_PROBLEM_SUMMARY=137;
+  var self_url="https://unicorn.ejudge.ru/ej/client";
+  var script_name="/ej/client";
+  var jsonState = { "h": 11, "m": 56, "s": 32, "d": 7, "o": 11, "y": 2022 };
+  var updateFailedMessage = "STATUS UPDATE FAILED!";
+  var testingInProgressMessage = "TESTING IN PROGRESS...";
+  var testingCompleted = "TESTING COMPLETED";
+  var waitingTooLong = "REFRESH PAGE MANUALLY!";
+</script>
+<link rel="stylesheet" href="4_files/unpriv.css" type="text/css">
+<link rel="stylesheet" href="4_files/unpriv3.css" type="text/css">
+
+<title>Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</title></head>
+<body onload="startClock()"><div id="main-cont"><div id="container"><div id="l12-col"><div id="l12">
+<div class="main_phrase">Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</div>
+<div id="main-menu">
+<ul>
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-settings/S56150d3c3f95cada">Settings</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/register/main-page/S56150d3c3f95cada">Registration</a></div></li>
+
+
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/main-page/S56150d3c3f95cada">Info</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-problem-summary/S56150d3c3f95cada">Summary</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-submissions/S56150d3c3f95cada">Submissions</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clar-submit/S56150d3c3f95cada">Submit clar</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clars/S56150d3c3f95cada">Clars</a></div></li>
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/logout/S56150d3c3f95cada">Logout [s02210398]</a></div></li>
+</ul>
+</div>
+</div></div>
+<div id="l11"><img src="4_files/logo3.png" alt="logo"></div>
+<div id="l13">
+<div class="server_status_on" id="statusLine">
+<div id="currentTime">11:56:35</div> / <b>RUNNING</b><div id="reloadButton" style="visibility: hidden">/ <a class="menu" onclick="reloadPage()"><b>[ REFRESH ]</b></a></div><div id="statusString" style="visibility: hidden"></div></div>
+<br>
+<table class="probNav">
+<tbody><tr><td class="b0" id="probNavTaskArea" valign="top"><div id="probNavTaskArea">
+
+
+
+
+<h2>Submit a solution for mz11-4-mz11-4</h2>
+
+<table class="line-table-wb">
+
+
+    <tbody><tr><td><b>Full score:</b></td><td><tt>100</tt></td></tr>
+
+    <tr><td><b>Run penalty:</b></td><td><tt>10</tt></td></tr>
+
+
+
+
+
+
+    <tr><td><b>Time limit:</b></td><td><tt>1 s</tt></td></tr>
+
+
+    <tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+
+
+    <tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+
+
+
+    <tr><td><b>Stack limit:</b></td><td><tt>8M</tt></td></tr>
+
+
+
+
+    <tr><td><b>Open date:</b></td><td><tt>2022/11/07 10:30:00</tt></td></tr>
+
+
+
+    <tr><td><b>Deadline:</b></td><td><tt>2022/11/07 12:05:00</tt></td></tr>
+
+
+
+
+
+
+</tbody></table>
+
+<h3>Problem mz11-4: mz11-4</h3>
+<p>На стандартном потоке ввода задается целое число <i>N</i> (<i>N</i> &gt; 0). Требуется
+создать <i>N - 1</i> процессов так, чтобы первый процесс (процесс-родитель) вывел
+на стандартный поток вывода число 1, второй процесс (его сын) вывел на
+стандартный поток вывода число 2, третий процесс (сын сына) вывел 3 и
+так далее.</p>
+
+<p>Вывод должен быть таким, чтобы всегда на стандартном потоке вывода
+оказывалась последовательность 1 2 3 ... N, записанная в одну строку
+строго с одним пробелом между числами. В конце вывода должен находиться 
+символ \n. Дополнительные пробелы в начале или конце строки не 
+допускаются.
+Для вывода использовать средства высокого уровня.</p>
+
+<p>Процесс-родитель должен завершаться самым последним из всех процессов.</p>
+<p>Не используйте рекурсию!</p>
+
+
+<p>&nbsp;</p><div id="ej-submit-tabs">
+
+<div id="ej-main-submit-tab">
+<h3>Submit a solution</h3><form method="post" enctype="multipart/form-data" action="https://unicorn.ejudge.ru/ej/client"><input type="hidden" name="SID" value="56150d3c3f95cada"><input type="hidden" name="prob_id" value="96">
+<table class="b0">
+<input type="hidden" name="lang_id" value="57">
+<tbody><tr><td class="b0">Language:</td><td class="b0">gcc-32 - GNU C (32 bit) 12.1.1</td></tr>
+<tr><td class="b0">File</td><td class="b0"><input type="file" name="file"></td></tr>
+<tr><td class="b0">Send!</td><td class="b0"><input type="submit" name="action_40" value="Send!"></td></tr></tbody></table></form>
+<h2>Previous submissions of this problem</h2>
+<table class="table"><tbody><tr><th class="b1">Run ID</th><th class="b1">Time</th><th class="b1">Size</th><th class="b1">Problem</th><th class="b1">Language</th><th class="b1">Result</th><th class="b1">Tests passed</th><th class="b1">Score</th><th class="b1">View source</th><th class="b1">View report</th></tr>
+<tr>
+<td class="b1">3173</td><td class="b1">2022/11/07 11:11:17</td><td class="b1">551</td><td class="b1">mz11-4</td><td class="b1">gcc-32</td><td class="b1">Pending review</td><td class="b1">7</td><td class="b1"><b>100</b></td><td class="b1"><a href="https://unicorn.ejudge.ru/ej/client/view-source/S56150d3c3f95cada?run_id=3173">View</a></td><td class="b1"><a href="https://unicorn.ejudge.ru/ej/client/view-report/S56150d3c3f95cada?run_id=3173">View</a></td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+
+
+
+
+
+
+</div></td><td class="b0" id="probNavRightList" valign="top"><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=1">mz01-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=2">mz01-2</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=3">mz01-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=4">mz01-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=5">mz01-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=6">mz01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=7">up01-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=8">up01-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=9">up01-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=10">up01-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=11">up01-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=12">up01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=13">mz02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=14">mz02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=15">mz02-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=16">mz02-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=17">mz02-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=18">mz02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=19">up02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=20">up02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=21">up02-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=22">up02-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=23">up02-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=24">up02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=25">up02-7</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=26">mz03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=27">mz03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=28">mz03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=29">mz03-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=30">mz03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=31">up03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=32">up03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=33">up03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=34">up03-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=35">up03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=36">mz04-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=37">mz04-2</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=38">mz04-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=39">mz04-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=40">mz04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=41">mz04-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=42">up04-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=43">up04-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=44">up04-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=45">up04-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=46">up04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=47">mz05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=48">mz05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=49">mz05-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=50">mz05-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=51">mz05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=52">up05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=53">up05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=54">up05-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=55">up05-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=56">up05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=57">mz06-1</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=58">mz06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=59">mz06-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=60">mz06-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=61">mz06-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=62">up06-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=63">up06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=64">up06-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=65">up06-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=66">up06-5</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=67">mz07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=68">mz07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=69">mz07-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=70">mz07-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=71">mz07-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=72">up07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=73">up07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=74">up07-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=75">up07-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=76">up07-5</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=77">mz08-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=78">mz08-2</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=79">mz08-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=80">mz08-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=81">mz08-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=82">mz09-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=83">mz09-2</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=84">mz09-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=85">mz09-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=86">mz09-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=87">mz09-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=88">ht10-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=89">ht10-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=90">ht10-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=91">ht10-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=93">mz11-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=94">mz11-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=95">mz11-3</a></div><div class="probCurrent"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=96">mz11-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S56150d3c3f95cada?prob_id=97">mz11-5</a></div></td></tr></tbody></table>
+<div id="footer"><p class="ejudge_copyright"><a href="https://ejudge.ru/">ejudge 3.9.1+ (GIT 9de9d82c2) (2022-11-07 01:10:14)</a>.</p>
+<p class="ejudge_copyright">Copyright © 2000-2022 Alexander Chernov.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>

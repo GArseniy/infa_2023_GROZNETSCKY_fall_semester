@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Contest_12.dir/4/4.c.o -o Contest_12 

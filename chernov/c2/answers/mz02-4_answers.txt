@@ -1,0 +1,54 @@
+ANSWERS
+***Answer 1:
+-f
+***Answer 2:
+man 1 write выводит описание сообщения другому пользователю
+man 2 write выводит описание вывода в файловый дескриптор
+***Answer 3:
+cat - concatenate files and print on the standart output
+grep - searches  for  PATTERNS  in  each  FILE.   PATTERNS  is one or more
+       patterns separated by newline characters, and grep prints each line  that
+       matches a pattern.  Typically PATTERNS should be quoted when grep is used
+       in a shell command.
+head - Print the first 10 lines of each FILE to standard output.  With more than
+       one FILE, precede each with a header giving the file name.
+yes - Repeatedly output a line with all specified STRING(s), or 'y'.
+***Answer 4:
+По имени в восходящем порядке
+***Answer 5:
+Директория
+-dlsbc
+Дата последнего изменения файла
+***Answer 6:
+-alS
+***Answer 7:
+man_db.conf
+***Answer 8:
+-rw-r--r--. 1 root root    58 июл 20 07:53 /etc/networks
+-rw-r--r--. 1 root root 12712 сен 11 16:30 /etc/passwd
+***Answer 9:
+cat /etc/hosts > ~/file3
+cat /etc/passwd >> ~/file3
+cat /etc/fstab/ >> ~/file3
+***Answer 10:
+rw-r----x 641
+r---wx--- 430
+rwxr-x--- 750
+r--r----x 441
+rw-rw--w- 662
+***Answer 11:
+022
+rw-rw-rw -> rw-r--r--
+666	 -> 644
+***Answer 12:
+026
+***Answer 13:
+drwxr-x---. 1 s02210398 s02210398    0 сен 15 14:02 newtask1
+***Answer 14:
+4
+***Answer 15:
+Потому, что в файл запишется 'abc\n', 'def' не запишется из-за прерывания
+***Answer 16:
+размер file5 будет 5 байт
+размер file6 будет 4 байта
+т.к. в file5 будет записано '1234\n', а в file6 только '1234'

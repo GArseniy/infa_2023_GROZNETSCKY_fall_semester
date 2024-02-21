@@ -1,0 +1,33 @@
+ANSWERS
+***ANSWER 17:
+/home/s02210398
+Это путь на домашний каталог текущего пользователя
+***ANSWER 18:
+/usr/include
+***ANSWER 19:
+окт 2 13:30 (время создания)
+0755
+***ANSWER 20:
+38 bytes
+1 /home/s02210398 2 /home/s02210398 3
+***ANSWER 21:
+/etc/cloud
+***ANSWER 22:
+total 20
+-rw-r--r--. 1 s02210398 s02210398   386 окт  2 13:35 hosts
+-rw-r--r--. 1 s02210398 s02210398 12712 окт  2 13:35 passwd
+***ANSWER 23:
+total 20
+-rw-r--r--. 1 s02210398 s02210398   386 окт  2 13:35 hosts2
+-rw-r--r--. 1 s02210398 s02210398 12712 окт  2 13:35 passwd
+***ANSWER 24:
+UID = 1049
+USER = s02210398
+***ANSWER 25:
+/bin/bash
+***ANSWER 26:
+”/etc:/home/s02210398/.local/bin:/home/s02210398/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/include”
+***ANSWER 27:
+/bin
+***ANSWER 28:
+2 0

@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Seminars.dir/Sem_14/5.c.o -o Seminars 

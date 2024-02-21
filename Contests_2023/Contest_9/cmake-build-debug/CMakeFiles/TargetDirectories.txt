@@ -1,0 +1,3 @@
+/mnt/c/Users/Arseny/Documents/Prog/OS/Contests_2023/Contest_9/cmake-build-debug/CMakeFiles/Contest_9.dir
+/mnt/c/Users/Arseny/Documents/Prog/OS/Contests_2023/Contest_9/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Arseny/Documents/Prog/OS/Contests_2023/Contest_9/cmake-build-debug/CMakeFiles/rebuild_cache.dir

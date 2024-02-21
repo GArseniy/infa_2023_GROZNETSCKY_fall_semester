@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="6_files/jquery-ui.css">
+<script src="6_files/jquery-3.6.0.js"></script>
+<script src="6_files/jquery-ui.js"></script>
+<script type="text/javascript" src="6_files/unpriv.js"></script>
+<script type="text/javascript">
+  var SID="7388ae11b0135f76";
+  var NEW_SRV_ACTION_JSON_USER_STATE=175;
+  var NEW_SRV_ACTION_VIEW_PROBLEM_SUMMARY=137;
+  var self_url="https://unicorn.ejudge.ru/ej/client";
+  var script_name="/ej/client";
+  var jsonState = { "h": 23, "m": 31, "s": 6, "d": 21, "o": 10, "y": 2022 };
+  var updateFailedMessage = "STATUS UPDATE FAILED!";
+  var testingInProgressMessage = "TESTING IN PROGRESS...";
+  var testingCompleted = "TESTING COMPLETED";
+  var waitingTooLong = "REFRESH PAGE MANUALLY!";
+</script>
+<link rel="stylesheet" href="6_files/unpriv.css" type="text/css">
+<link rel="stylesheet" href="6_files/unpriv3.css" type="text/css">
+
+<title>Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</title></head>
+<body onload="startClock()"><div id="main-cont"><div id="container"><div id="l12-col"><div id="l12">
+<div class="main_phrase">Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</div>
+<div id="main-menu">
+<ul>
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-settings/S7388ae11b0135f76">Settings</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/register/main-page/S7388ae11b0135f76">Registration</a></div></li>
+
+
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/main-page/S7388ae11b0135f76">Info</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-problem-summary/S7388ae11b0135f76">Summary</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-submissions/S7388ae11b0135f76">Submissions</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clar-submit/S7388ae11b0135f76">Submit clar</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clars/S7388ae11b0135f76">Clars</a></div></li>
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/logout/S7388ae11b0135f76">Logout [s02210398]</a></div></li>
+</ul>
+</div>
+</div></div>
+<div id="l11"><img src="6_files/logo3.png" alt="logo"></div>
+<div id="l13">
+<div class="server_status_on" id="statusLine">
+<div id="currentTime">23:31:16</div> / <b>RUNNING</b><div id="reloadButton" style="visibility: hidden">/ <a class="menu" onclick="reloadPage()"><b>[ REFRESH ]</b></a></div><div id="statusString" style="visibility: hidden"></div></div>
+<br>
+<table class="probNav">
+<tbody><tr><td class="b0" id="probNavTaskArea" valign="top"><div id="probNavTaskArea">
+
+
+
+
+<h2>Problem mz01-6-mz01-6</h2>
+
+<table class="line-table-wb">
+
+
+    <tbody><tr><td><b>Full score:</b></td><td><tt>100</tt></td></tr>
+
+    <tr><td><b>Run penalty:</b></td><td><tt>10</tt></td></tr>
+
+
+
+
+
+
+    <tr><td><b>Time limit:</b></td><td><tt>500 ms</tt></td></tr>
+
+
+    <tr><td><b>Real time limit:</b></td><td><tt>5 s</tt></td></tr>
+
+
+    <tr><td><b>Memory limit:</b></td><td><tt>64M</tt></td></tr>
+
+
+
+    <tr><td><b>Stack limit:</b></td><td><tt>8M</tt></td></tr>
+
+
+
+
+    <tr><td><b>Open date:</b></td><td><tt>2022/09/05 10:30:00</tt></td></tr>
+
+
+
+    <tr><td><b>Deadline:</b></td><td><tt>2022/09/05 12:05:00</tt></td></tr>
+
+
+
+
+
+
+</tbody></table>
+
+<h3>Problem mz01-6: mz01-6</h3>
+<p>Служба электроснабжения проводит мониторинг уровня снега, лежащего на
+ ЛЭП Усть-Луга - Грайфсвальд. Вся ЛЭП разбивается на участки опорами. 
+Снег имеет свойства падать на какой-либо интервал ЛЭП, если там уже 
+лежал какой-либо снег, то высота снежного покрова на этом участке 
+суммируется. Также снег имеет тенденцию таять на участке трассы в 
+результате оттепели, при этом известно, что не бывает сугробов 
+отрицательной высоты. Энергетикам крайне важно уметь узнавать суммарную 
+высоту снежного покрова на некоторых последовательных участках, чтобы 
+знать вероятность обрыва проводов.</p>
+<h3>Input format</h3>
+<p>В первой строке входного файла содержатся два числа: <span>N</span> – (1 ≤ <span>N</span> ≤ 10<span>&nbsp;</span>000) и <span>M</span> – количество команд (1 ≤ <span>M</span> ≤ 50<span>&nbsp;</span>000). Каждая команда имеет вид “1 <span>L</span> <span>R</span> <span>S</span>”, что означает, что на участок с <span>L</span>-ой опоры по <span>R</span>-ую опору выпало <span>S</span> сантиметров снега (<span>S</span> может быть и отрицательным, тогда это означает, что такое количества снега растаяло), или “2 <span>L</span> <span>R</span>” – запрос суммарной высоты снега на участке с <span>L</span>-ой опоры по <span>R</span>-ую. Опоры нумеруются от 0 до <span>N</span>. Гарантируется, что для запросов вида “1 <span>L</span> <span>R</span> <span>S</span>” при S &lt; 0 на каждом участке между опорами L и R уровень снега составляет не менее S. </p>
+<h3>Output format</h3>
+<p>На каждую команду 2 (запрос) вы должны выводить число <span>K</span> – суммарную высоту снежного покрова, лежащего на проводах с <span>L</span>-ой опоры по <span>R</span>-ую.
+ Каждое число должно выводиться на новой строке. Известно, что в 
+процессе работы суммарное количество снега на любом интервале не 
+превышает 2<sup>31</sup>.</p>
+<h3>Examples</h3><h4>Input</h4>
+<pre>10 5
+1 0 9 10
+1 1 5 -3
+2 4 8
+1 0 6 25
+2 0 2</pre>
+<h4>Output</h4>
+<pre>37
+67</pre>
+
+
+<p>&nbsp;</p><div id="ej-submit-tabs">
+
+<div id="ej-main-submit-tab">
+</div>
+
+</div>
+
+
+
+
+
+</div></td><td class="b0" id="probNavRightList" valign="top"><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=1">mz01-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=2">mz01-2</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=3">mz01-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=4">mz01-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=5">mz01-5</a></div><div class="probCurrent"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=6">mz01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=7">up01-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=8">up01-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=9">up01-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=10">up01-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=11">up01-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=12">up01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=13">mz02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=14">mz02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=15">mz02-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=16">mz02-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=17">mz02-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=18">mz02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=19">up02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=20">up02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=21">up02-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=22">up02-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=23">up02-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=24">up02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=25">up02-7</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=26">mz03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=27">mz03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=28">mz03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=29">mz03-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=30">mz03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=31">up03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=32">up03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=33">up03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=34">up03-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=35">up03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=36">mz04-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=37">mz04-2</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=38">mz04-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=39">mz04-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=40">mz04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=41">mz04-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=42">up04-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=43">up04-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=44">up04-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=45">up04-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=46">up04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=47">mz05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=48">mz05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=49">mz05-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=50">mz05-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=51">mz05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=52">up05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=53">up05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=54">up05-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=55">up05-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=56">up05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=57">mz06-1</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=58">mz06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=59">mz06-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=60">mz06-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=61">mz06-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=62">up06-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=63">up06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=64">up06-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=65">up06-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=66">up06-5</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=67">mz07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=68">mz07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=69">mz07-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=70">mz07-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=71">mz07-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=72">up07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=73">up07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=74">up07-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=75">up07-4</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=76">up07-5</a></div></td></tr></tbody></table>
+<div id="footer"><p class="ejudge_copyright"><a href="https://ejudge.ru/">ejudge 3.9.1+ (GIT df344d5a9) (2022-10-20 15:37:20)</a>.</p>
+<p class="ejudge_copyright">Copyright © 2000-2022 Alexander Chernov.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>

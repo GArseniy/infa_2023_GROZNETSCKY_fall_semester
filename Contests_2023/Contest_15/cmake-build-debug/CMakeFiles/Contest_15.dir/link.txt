@@ -1,0 +1,1 @@
+/usr/bin/cc -g -rdynamic CMakeFiles/Contest_15.dir/3.c.o -o Contest_15 

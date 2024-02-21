@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Contest_17_KR.dir/333.c.o -o Contest_17_KR 

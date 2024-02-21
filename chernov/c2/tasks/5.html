@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="5_files/jquery-ui.css">
+<script src="5_files/jquery-3.6.0.js"></script>
+<script src="5_files/jquery-ui.js"></script>
+<script type="text/javascript" src="5_files/unpriv.js"></script>
+<script type="text/javascript">
+  var SID="7388ae11b0135f76";
+  var NEW_SRV_ACTION_JSON_USER_STATE=175;
+  var NEW_SRV_ACTION_VIEW_PROBLEM_SUMMARY=137;
+  var self_url="https://unicorn.ejudge.ru/ej/client";
+  var script_name="/ej/client";
+  var jsonState = { "h": 23, "m": 36, "s": 9, "d": 21, "o": 10, "y": 2022 };
+  var updateFailedMessage = "STATUS UPDATE FAILED!";
+  var testingInProgressMessage = "TESTING IN PROGRESS...";
+  var testingCompleted = "TESTING COMPLETED";
+  var waitingTooLong = "REFRESH PAGE MANUALLY!";
+</script>
+<link rel="stylesheet" href="5_files/unpriv.css" type="text/css">
+<link rel="stylesheet" href="5_files/unpriv3.css" type="text/css">
+
+<title>Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</title></head>
+<body onload="startClock()"><div id="main-cont"><div id="container"><div id="l12-col"><div id="l12">
+<div class="main_phrase">Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</div>
+<div id="main-menu">
+<ul>
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-settings/S7388ae11b0135f76">Settings</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/register/main-page/S7388ae11b0135f76">Registration</a></div></li>
+
+
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/main-page/S7388ae11b0135f76">Info</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-problem-summary/S7388ae11b0135f76">Summary</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-submissions/S7388ae11b0135f76">Submissions</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clar-submit/S7388ae11b0135f76">Submit clar</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clars/S7388ae11b0135f76">Clars</a></div></li>
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/logout/S7388ae11b0135f76">Logout [s02210398]</a></div></li>
+</ul>
+</div>
+</div></div>
+<div id="l11"><img src="5_files/logo3.png" alt="logo"></div>
+<div id="l13">
+<div class="server_status_on" id="statusLine">
+<div id="currentTime">23:36:36</div> / <b>RUNNING</b><div id="reloadButton" style="visibility: hidden">/ <a class="menu" onclick="reloadPage()"><b>[ REFRESH ]</b></a></div><div id="statusString" style="visibility: hidden"></div></div>
+<br>
+<table class="probNav">
+<tbody><tr><td class="b0" id="probNavTaskArea" valign="top"><div id="probNavTaskArea">
+
+
+
+
+<h2>Problem mz02-5-mz02-5</h2>
+
+<table class="line-table-wb">
+
+
+
+    <tbody><tr><td><b>Open date:</b></td><td><tt>2022/09/12 10:30:00</tt></td></tr>
+
+
+
+    <tr><td><b>Deadline:</b></td><td><tt>2022/09/12 12:05:00</tt></td></tr>
+
+
+
+
+
+
+</tbody></table>
+
+<h3>Problem mz02-5: mz02-5</h3>
+
+<h2>Практическое занятие «Введение в UNIX», задача 4</h2>
+
+<p>Задание должно выполняться на сервере HOST</p>
+
+<p>Правила оформления ответов описаны в предыдущем задании.</p>
+
+<p><b>Шаг 12.</b> У каждого пользователя есть его личный каталог для хранения
+файлов в системе. Обычно, этот каталог находится в каталоге /home.
+Личный каталог пользователя называется
+«домашним» каталогом.
+Для смены текущего каталога используется команда cd. Команда cd без
+аргументов устанавливает домашний каталог в качестве текущего.
+Например,</p>
+<pre>cd /tmp</pre>
+<p>переход в каталог /tmp</p>
+<pre>cd</pre>
+<p>переход в домашний каталог
+Для получения полного пути к текущему каталогу используется команда</p>
+<pre>pwd</pre>
+
+<p><b>Вопрос 17.</b> Выполните команды</p>
+<pre>cd
+pwd</pre>
+<p>что было напечатано на стандартный поток вывода? Что это за путь?</p>
+
+<p><b>Вопрос 18.</b> Выполните команду</p>
+<pre>cd /usr/local/bin/./../../include/sys/..</pre>
+<p>какой каталог будет установлен в качестве текущего?</p>
+
+<p><b>Шаг 13.</b> Для создания каталогов используется команда mkdir.</p>
+
+<p><b>Вопрос 19.</b> Выполните команды</p>
+<pre>cd
+mkdir newtask1</pre>
+<p>Каково будет время последней модификации каталога newtask1? Каковы
+права доступа к этому каталогу (восьмеричные)?</p>
+
+<p><b>Шаг 14.</b> Для удаления отдельных файлов используется команда rm.
+Например,
+</p><pre>rm ~/file2</pre><p></p>
+
+<p><b>Шаг 15.</b> Для удаления пустого каталога используется команда rmdir.
+Например,
+</p><pre>rmdir newtask1</pre><p></p>
+
+<p><b>Шаг 16.</b> Для удаления файлов и каталогов со всем их содержимым
+используется команда rm с опцией -rf, например,</p>
+<pre>rm -rf .mozilla</pre>
+<p><b>Внимание! Используйте с осторожностью!!!</b></p>
+
+<p><b>Шаг 17.</b> Команда echo выводит на стандартный поток вывода свои
+аргументы командной строки. Например,
+</p><pre>echo Hello world</pre><p></p>
+
+<p><b>Вопрос 20.</b> Выполните команду</p>
+<pre>echo 1 ~ 2 ~ 3 &gt; ~/file7</pre>
+<p>каков получился размер файла ~/file7? Каково его содержимое?</p>
+
+<p><b>Шаг 18.</b> В командной строке допускается использовать шаблоны имен
+файлов. В шаблонах имен файлов символ '*' (звездочка) означает
+произвольное количество (в том числе 0) произвольных символов, а
+символ '?' (вопрос) означает ровно один произвольный символ. Шаблоны
+имен файлов обрабатываются командным процессором bash перед
+вызовом запускаемой программы, и поэтому запускаемая программа
+получает в качестве аргументов командной строки все файлы,
+удовлетворяющие шаблону, а не сам шаблон.</p>
+
+<p><b>Вопрос 21.</b> Выполните команду</p>
+<pre>echo /etc/c?o*</pre>
+<p>что выведено на стандартный поток вывода?</p>
+
+<p><b>Шаг 19.</b> Для копирования файлов используется команда cp. Например,</p>
+<pre>cp /etc/passwd ~/file9</pre>
+<p>скопирует файл /etc/passwd в файл ~/file9</p>
+<pre>cp /etc/hosts /etc/group ~</pre>
+<p>скопирует файлы /etc/hosts и /etc/group в каталог /tmp под своими
+именами (hosts, group)</p>
+<pre>cp /etc/p* ~</pre>
+<p>скопирует все файлы, удовлетворяющие шаблону /etc/p* в каталог /tmp</p>
+
+<p><b>Вопрос 22.</b> В домашнем каталоге создайте каталог newtask2, затем
+скопируйте в него файлы /etc/passwd и /etc/hosts. Что будет выведено
+командой ls -l при распечатке списка файлов в каталоге newtask2?</p>
+
+<p><b>Шаг 20.</b> Для переноса (переименования) файлов используется команда
+mv, использование которой аналогично использованию команды cp.</p>
+
+<p><b>Вопрос 23.</b> В каталоге newtask2 переименуйте файл hosts в hosts2. Что
+будет выведено командой ls -l при распечатке списка файлов в каталоге
+newtask2?</p>
+
+<p><b>Шаг 21.</b> Переменные окружения — это способ хранения дополнительной
+информации (как правило, о настройках пользователя), доступной
+каждой выполняющейся программе. Переменная окружения ставит в
+соответствие некоторому имени произвольное текстовое значение.
+Например, переменная окружения HOME задает путь к домашнему
+каталогу.
+Чтобы получить список всех установленных переменных окружения
+используется команда set без аргументов.</p>
+
+<p><b>Вопрос 24.</b> Выполните команду set для просмотра всех переменных
+окружения. Какое назначение у переменных окружения USER и UID?</p>
+
+<p><b>Шаг 22.</b> Вывести значение некоторой конкретной переменной окружения
+можно с помощью команды</p>
+<pre>echo $VAR</pre>
+<p>где VAR – имя переменной окружения. Например,</p>
+<pre>echo $USER</pre>
+<p>Конструкция $VAR в аргументах командной строки обрабатывается
+командным процессором bash, поэтому запускаемая программа вместо
+записи $VAR получает в качестве аргумента командной строки значение
+переменной окружения $VAR.</p>
+
+<p><b>Вопрос 25.</b> Каково значение переменной окружения SHELL?</p>
+
+<p><b>Шаг 23.</b> Установить или изменить значение переменной окруженияможно с помощью команды</p>
+<pre>VAR=value</pre>
+<p>здесь VAR – имя переменной окружения, value – значение переменной
+окружения. value не должно содержать пробелы. Если value содержит
+пробелы (которые могут появиться и из-за использования значений
+других переменных окружения), необходимо value заключить в кавычки:</p>
+<pre>VAR=”value”</pre>
+<p>В строке value могут использоваться имена переменных, например,</p>
+<pre>WORKDIR=$HOME/newtask2</pre>
+
+<p><b>Вопрос 26.</b> Выполните команду
+</p><pre>PATH=”/etc:$PATH:/usr/include”</pre>
+каково будет значение переменной окружения PATH?<p></p>
+
+<p><b>Шаг 24.</b> Переменная окружения PATH задает список каталогов, которые
+просматриваются, если запускается команда, в имени которой
+отсутствует символ '/'. Каталоги в переменной окружения PATH
+разделяются символом ':' (двоеточие).
+Например, при выполнении команды</p>
+<pre>ls /etc</pre>
+<p>для поиска программы (исполняемого файла) ls будет использоваться
+переменная окружения PATH. При выполнении команды</p>
+<pre>/bin/ls /etc</pre>
+<p>всегда будет использоваться программа /bin/ls независимо от значения
+переменной окружения PATH.</p>
+
+<p><b>Вопрос 27.</b> В каком каталоге из списка каталогов в переменной
+окружения PATH находится программа who?</p>
+
+<p><b>Шаг 25.</b> Для получения кода завершения процесса используется
+специальная переменная $?. Если процесс завершился успешно, код
+завершения равен 0, если процесс завершился с ошибкой, код
+завершения не 0.</p>
+
+<p><b>Вопрос 28.</b> Запустите ls /123 и ls /home, с какими кодами возврата
+завершился каждый из процессов? используйте команду echo.</p>
+
+<h3>Отчет о выполнении задания</h3>
+
+<p>Перед сдачей файла report.txt в тестирующую систему
+выполните следующую команду:</p>
+
+<pre>openssl dgst -sha256 -sign LOGIN.pem -hex &lt; report.txt &gt; sig.txt
+cat sig.txt &gt;&gt; report.txt</pre>
+
+<p>Здесь LOGIN.pem - приватный ключ (см. предыдущие задачи).
+В результате в конец файла report.txt будет дописана цифровая подпись.</p>
+
+<p>В тестирующую систему сдайте подписанный вами файл report.txt</p>
+
+    
+
+<p>&nbsp;</p><div id="ej-submit-tabs">
+
+<div id="ej-main-submit-tab">
+</div>
+
+</div>
+
+
+
+
+
+</div></td><td class="b0" id="probNavRightList" valign="top"><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=1">mz01-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=2">mz01-2</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=3">mz01-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=4">mz01-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=5">mz01-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=6">mz01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=7">up01-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=8">up01-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=9">up01-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=10">up01-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=11">up01-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=12">up01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=13">mz02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=14">mz02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=15">mz02-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=16">mz02-4</a></div><div class="probCurrent"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=17">mz02-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=18">mz02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=19">up02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=20">up02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=21">up02-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=22">up02-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=23">up02-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=24">up02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=25">up02-7</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=26">mz03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=27">mz03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=28">mz03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=29">mz03-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=30">mz03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=31">up03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=32">up03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=33">up03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=34">up03-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=35">up03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=36">mz04-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=37">mz04-2</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=38">mz04-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=39">mz04-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=40">mz04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=41">mz04-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=42">up04-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=43">up04-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=44">up04-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=45">up04-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=46">up04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=47">mz05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=48">mz05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=49">mz05-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=50">mz05-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=51">mz05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=52">up05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=53">up05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=54">up05-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=55">up05-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=56">up05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=57">mz06-1</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=58">mz06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=59">mz06-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=60">mz06-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=61">mz06-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=62">up06-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=63">up06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=64">up06-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=65">up06-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=66">up06-5</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=67">mz07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=68">mz07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=69">mz07-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=70">mz07-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=71">mz07-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=72">up07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=73">up07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=74">up07-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=75">up07-4</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=76">up07-5</a></div></td></tr></tbody></table>
+<div id="footer"><p class="ejudge_copyright"><a href="https://ejudge.ru/">ejudge 3.9.1+ (GIT df344d5a9) (2022-10-20 15:37:20)</a>.</p>
+<p class="ejudge_copyright">Copyright © 2000-2022 Alexander Chernov.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>

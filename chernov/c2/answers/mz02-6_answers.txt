@@ -1,0 +1,57 @@
+ANSWERS
+***ANSWER 29:
+aplusb.c:1:6: error: return type of ‘main’ is not ‘int’ [-Werror=main]
+    1 | void main()
+      |      ^~~~
+aplusb.c: In function ‘main’:
+aplusb.c:4:1: error: implicit declaration of function ‘scanf’ [-Werror=implicit-function-declaration]
+    4 | scanf("%d%d", a, &b);
+      | ^~~~~
+aplusb.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+  +++ |+#include <stdio.h>
+    1 | void main()
+aplusb.c:4:1: error: incompatible implicit declaration of built-in function ‘scanf’ [-Werror=builtin-declaration-mismatch]
+    4 | scanf("%d%d", a, &b);
+      | ^~~~~
+aplusb.c:4:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+aplusb.c:4:9: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Werror=format=]
+    4 | scanf("%d%d", a, &b);
+      |        ~^     ~
+      |         |     |
+      |         int * int
+aplusb.c:5:3: error: statement with no effect [-Werror=unused-value]
+    5 | c == a + b;
+      | ~~^~~~~~~~
+aplusb.c:6:1: error: implicit declaration of function ‘printf’ [-Werror=implicit-function-declaration]
+    6 | printf("%d\n", c);
+      | ^~~~~~
+aplusb.c:6:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+aplusb.c:6:1: error: incompatible implicit declaration of built-in function ‘printf’ [-Werror=builtin-declaration-mismatch]
+aplusb.c:6:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+aplusb.c:4:1: error: ‘a’ is used uninitialized [-Werror=uninitialized]
+    4 | scanf("%d%d", a, &b);
+      | ^~~~~~~~~~~~~~~~~~~~
+aplusb.c:3:5: note: ‘a’ was declared here
+    3 | int a, b, c;
+      |     ^
+aplusb.c:6:1: error: ‘c’ is used uninitialized [-Werror=uninitialized]
+    6 | printf("%d\n", c);
+      | ^~~~~~~~~~~~~~~~~
+aplusb.c:3:11: note: ‘c’ was declared here
+    3 | int a, b, c;
+      |           ^
+cc1: all warnings being treated as errors
+***ANSWER 30:
+-rwxr-xr-x. 1 s02210398 s02210398 25000 окт  2 13:52 aplusb
+***ANSWER 31:
+26049
+***ANSWER 32:
+./aplusb <001.dat >001.res
+***ANSWER 33:
+38761
+***ANSWER 34:
+0m0,000s
+***ANSWER 35:
+1e9 - 4e8 + 5e6
+***ANSWER 36:
+Выводит все текущие процессы, содержащие sh в названии

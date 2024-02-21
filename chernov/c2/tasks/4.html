@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="4_files/jquery-ui.css">
+<script src="4_files/jquery-3.6.0.js"></script>
+<script src="4_files/jquery-ui.js"></script>
+<script type="text/javascript" src="4_files/unpriv.js"></script>
+<script type="text/javascript">
+  var SID="7388ae11b0135f76";
+  var NEW_SRV_ACTION_JSON_USER_STATE=175;
+  var NEW_SRV_ACTION_VIEW_PROBLEM_SUMMARY=137;
+  var self_url="https://unicorn.ejudge.ru/ej/client";
+  var script_name="/ej/client";
+  var jsonState = { "h": 23, "m": 35, "s": 49, "d": 21, "o": 10, "y": 2022 };
+  var updateFailedMessage = "STATUS UPDATE FAILED!";
+  var testingInProgressMessage = "TESTING IN PROGRESS...";
+  var testingCompleted = "TESTING COMPLETED";
+  var waitingTooLong = "REFRESH PAGE MANUALLY!";
+</script>
+<link rel="stylesheet" href="4_files/unpriv.css" type="text/css">
+<link rel="stylesheet" href="4_files/unpriv3.css" type="text/css">
+
+<title>Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</title></head>
+<body onload="startClock()"><div id="main-cont"><div id="container"><div id="l12-col"><div id="l12">
+<div class="main_phrase">Зубков Дмитрий [202 группа, 3 семестр, 2022-2023]: Submit a solution</div>
+<div id="main-menu">
+<ul>
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-settings/S7388ae11b0135f76">Settings</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/register/main-page/S7388ae11b0135f76">Registration</a></div></li>
+
+
+
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/main-page/S7388ae11b0135f76">Info</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-problem-summary/S7388ae11b0135f76">Summary</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-submissions/S7388ae11b0135f76">Submissions</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clar-submit/S7388ae11b0135f76">Submit clar</a></div></li><li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/view-clars/S7388ae11b0135f76">Clars</a></div></li>
+<li><div class="contest_actions_item"><a class="menu" href="https://unicorn.ejudge.ru/ej/client/logout/S7388ae11b0135f76">Logout [s02210398]</a></div></li>
+</ul>
+</div>
+</div></div>
+<div id="l11"><img src="4_files/logo3.png" alt="logo"></div>
+<div id="l13">
+<div class="server_status_on" id="statusLine">
+<div id="currentTime">23:35:59</div> / <b>RUNNING</b><div id="reloadButton" style="visibility: hidden">/ <a class="menu" onclick="reloadPage()"><b>[ REFRESH ]</b></a></div><div id="statusString" style="visibility: hidden"></div></div>
+<br>
+<table class="probNav">
+<tbody><tr><td class="b0" id="probNavTaskArea" valign="top"><div id="probNavTaskArea">
+
+
+
+
+<h2>Problem mz02-4-mz02-4</h2>
+
+<table class="line-table-wb">
+
+
+
+    <tbody><tr><td><b>Open date:</b></td><td><tt>2022/09/12 10:30:00</tt></td></tr>
+
+
+
+    <tr><td><b>Deadline:</b></td><td><tt>2022/09/12 12:05:00</tt></td></tr>
+
+
+
+
+
+
+</tbody></table>
+
+<h3>Problem mz02-4: mz02-4</h3>
+
+<h2>Практическое занятие «Введение в UNIX», задача 3</h2>
+
+<p>Задание должно выполняться на сервере HOST</p>
+
+<p>При выполнении этого практического занятия вам необходимо проделать
+все шаги, описанные ниже и дать ответы на все вопросы. Ответы на все
+вопросы должны находиться в одном текстовом файле, который вы
+сдадите в качестве отчета о выполнении занятия.
+Файл с ответами на вопросы должен иметь следующую структуру:</p>
+
+<pre>ANSWERS
+***Answer 1:
+текст ответа на вопрос 1
+***Answer 2:
+текст ответа на вопрос 2
+</pre>
+
+<p>и т. д.</p>
+
+<p>Для редактирования файла с ответами воспользуйтесь консольным текстовым редактором (nano, pico, vim, mcedit, emacs ...).
+Консольные текстовые редакторы не создают нового окна графической среды, а работают в окне эмулятора терминала,
+поэтому их можно использовать и тогда, когда графическая оконная среда недоступна, например, при использовании <tt>ssh</tt>
+для входа на другой компьютер в сети.</p>
+
+<p>Например, откройте файл на редактирование с помощью редактора nano с помощью команды:</p>
+
+<pre>nano report.txt</pre>
+
+<p>в этот файл вы будете записывать ответы на задания.
+В первой строке текста напишите слово ANSWERS. Для выхода из
+редактора нажмите Ctrl-X. Подтвердите, что желаете выйти из редактора
+и подтвердите имя сохраняемого файла.</p>
+
+<p>По желанию вы можете использовать редактор vim или редактор emacs в
+консольном режиме или любой другой консольный редактор.</p>
+
+<p>Снова откройте на редактирование файл <tt>answers.txt</tt>. Держите его
+открытым все время, но не забывайте регулярно сохранять файл с
+помощью Ctrl-O.</p>
+
+<p><b>Шаг 1.</b>
+Зайдите на сервер HOST и на нем выполняйте команды.
+Команда командного процессора имеет следующий общий вид:</p>
+
+<pre>COMMAND ARGS</pre>
+
+<p><tt>ARGS</tt> – это последовательность аргументов команды. Аргументы делятся
+на «опции», которые управляют работой программы, и имена файлов. Как
+правило, опции записываются перед именами файлов (но бывают и
+исключения). Например, у команды</p>
+
+<pre>ls -la /etc</pre>
+
+<p>Аргумент <tt>-la</tt> – опция (точнее, комбинация двух опций <tt>-l</tt> и <tt>-a</tt>),
+аргумент <tt>/etc</tt> – имя файла (точнее, каталога).</p>
+
+<p><b>Шаг 2.</b> Для получения описания команд и программ операционной
+системы UNIX используется команда <tt>man</tt>. Например, команда</p>
+<pre>man man</pre>
+<p>выдаст описание самой команды <tt>man</tt></p>
+<pre>man ls</pre>
+<p>выдаст описание команды <tt>ls</tt> (получение списка файлов).</p>
+
+<p>Описание команды может выдаваться в постраничном режиме. Для
+прокрутки страницы вниз можно использовать «пробел» или PgDn, для
+прокрутки страницы вверх — PgUp. Для выхода из прокрутки
+используется 'q'.</p>
+
+<p><b>Вопрос 1.</b> Какая опция команды man эквивалентна команде whatis.</p>
+
+<p><b>Вопрос 2.</b> Чем отличается man 1 write от man 2 write?</p>
+
+<p><b>Вопрос 3.</b> Опишите кратко, что делает каждая из команд:</p>
+
+<pre>cat
+grep
+head
+yes</pre>
+
+<p><b>Шаг 3.</b> Для получения списка файлов в каталоге используется команда <tt>ls</tt>.
+Чтобы получить список файлов с расширенной информацией о файлах
+используется опция <tt>-l</tt>, например:</p>
+
+<pre>ls -l /usr/bin</pre>
+
+<p><b>Вопрос 4.</b> Каким образом упорядочены строки описания файлов,
+выводимые командой ls?</p>
+
+<p><b>Вопрос 5.</b> При использовании опции <tt>-l</tt> на стандартный поток вывода выдается информация о файле в виде:</p>
+<pre>dr-xr-xr-x.   2 root root  20480 Jul 24 11:41 sbin</pre>
+
+<p>что означает символ 'd' в первой позиции? Какие еще символы могут здесь быть?
+Что означает "Jul 24 11:41"?</p>
+
+<p><b>Вопрос 6.</b> Какие опции позволят получить список всех файлов с
+расширенной информацией, упорядоченный в порядке убывания
+размера?</p>
+
+<p><b>Шаг 4.</b> Для вывода содержимого файла на стандартный поток вывода,
+объединения содержимого нескольких файлов, и т. д. используется команда <tt>cat</tt>. Например,</p>
+<pre>cat /etc/hosts /etc/fstab</pre>
+<p>сначала выведет на стандартный поток вывода содержимое
+файла <tt>/etc/hosts</tt>, затем выведет на стандартный поток вывода
+содержимое файла <tt>/etc/fstab</tt>.</p>
+
+<p><b>Вопрос 7.</b> С помощью команды cat выведите содержимое самого
+маленького регулярного файла (не символической ссылки), размер
+которого больше 5 байт в каталоге /etc, к которому [файлу] вы имеете
+доступ на чтение. Укажите имя этого файла.</p>
+
+<p><b>Шаг 5</b>. Вывод программы можно перенаправить в файл. Для этого
+предназначены конструкции перенаправления:</p>
+
+<table>
+<tbody><tr><td><tt>&gt; FILE</tt></td><td>перенаправление стандартного вывода программы в файл FILE (в режиме перезаписи)</td></tr>
+<tr><td><tt>&gt;&gt; FILE</tt></td><td>перенаправление стандартного вывода программы в файл FILE (в режиме добавления)</td></tr>
+<tr><td><tt>2&gt; FILE</tt></td><td>перенаправление стандартного потока ошибок в файл FILE (в режиме перезаписи)</td></tr>
+<tr><td><tt>2&gt;&gt; FILE</tt></td><td>перенаправление стандартного потока ошибок в файл FILE (в режиме добавления)</td></tr>
+<tr><td><tt>2&gt;&amp;1</tt></td><td>перенаправление стандартного потока ошибок туда, куда уже перенаправлен стандартный поток вывода</td></tr>
+<tr><td><tt>&lt; FILE</tt></td><td>перенаправление стандартного потока ввода на чтение из файла FILE</td></tr>
+</tbody></table>
+
+<p>Конструкции перенаправления не считаются аргументами программы и не 
+передаются в программу в качестве аргументов командной строки.
+В путях файлов, задаваемых в командной строке, символ ~ обозначает 
+домашний каталог текущего пользователя (то есть вас). Например, путь
+<tt>~/.bash_profile</tt> указывает на файл .bash_profile, расположенный в вашем домашнем каталоге.
+Например,</p>
+
+<pre>cat /etc/passwd &gt; ~/file1</pre>
+
+<p>содержимое файла /etc/passwd выводится на стандартный поток вывода,
+который перенаправлен в файл ~/file1, то есть содержимое
+файла /etc/passwd копируется в файл ~/file1.
+Команда</p>
+
+<pre>ls -l &gt; ~/file2 2&gt;&amp;1 /etc/passwd /etc/networks</pre>
+
+<p>перенаправит и стандартный поток вывода, и стандартный поток ошибок
+в файл ~/file2. При этом команде ls будут переданы следующие
+аргументы командной строки:</p>
+<pre>ls -l /etc/passwd /etc/networks</pre>
+
+<p><b>Вопрос 8.</b> Каково будет содержимое файла ~/file2 после выполнения
+команды
+</p><pre>ls -l &gt; ~/file2 2&gt;&amp;1 /etc/passwd /etc/networks</pre>
+<p></p>
+
+<p><b>Вопрос 9.</b> Запишите несколько вызовов команды cat только с одним
+аргументом и одним перенаправлением, которые дали бы такой же
+результат, что и команда
+</p><pre>cat /etc/hosts /etc/passwd /etc/fstab &gt; ~/file3</pre>
+<p></p>
+
+<p><b>Шаг 6.</b> Права доступа к файлам определяют допустимые операции, 
+которые может выполнить данный пользователь над данным файлом.
+В Unix системах пользователи делятся на три категории по отношению к 
+данному файлу: пользователь-владелец файла,
+пользователи, у которых один из идентификаторов группы совпадает с 
+группой файла (другими словами группа-владелец файла),
+все прочие пользователи. Для каждой из категорий пользователей 
+определяется доступность трех операций: "чтения", "записи" и 
+"исполнения".
+Каждая операция либо разрешена, либо запрещена. Таким образом для записи
+ прав доступа к файлу достаточно 9 бит (три категории в каждой по три 
+операции).
+Традиционно для записи прав доступа в числовой форме используется 
+восьмеричная система счисления. Тогда права доступа записываются тремя
+восьмеричными цифрами. Старшая из трех цифр отвечает за права доступа 
+для владельца файла, средняя - для группы файлов, и младшая - для прочих
+ пользователей.
+В каждом из восьмеричных разрядов бит 4 отвечает за право на чтение, бит
+ 2 - за право на запись, бит 1 - за право на исполнение.</p>
+
+<p>Например, права доступа 641 разрешают чтение и запись для владельца 
+файла, только чтения для группы пользователей файла и только исполнение 
+для всех прочих пользователей.</p>
+
+<p>Подробнее о правах доступа можете прочитать в <a href="https://ru.wikipedia.org/wiki/Chmod">Википедии</a>.</p>
+
+<p>При выводе списка файлов на экран для записи прав доступа 
+используется символическая форма, в которой знак '-' (минус) обозначает,
+ что соответствующее право отсутствует,
+'r' - что есть право на чтение, 'w' - что есть право на запись, 'x' - 
+что есть право на выполнение. Права доступа 641 запишутся как
+<tt>rw-r----x</tt>.</p>
+
+<p><b>Вопрос 10.</b> Для прав доступа в символической форме запишите права доступа в виде восьмеричного числа и наоборот.
+В каждой строчке сначала записываются права в символической форме, затем число.</p>
+<pre>rw-r----x 641
+r---wx--- ???
+????????? 750
+r--r----x ???
+????????? 662</pre>
+
+<p><b>Шаг 7.</b> При создании файлов необходимо некоторым образом 
+задавать права доступа к создаваемому файлу. Поскольку конструкции 
+перенаправления
+потоков не позволяют задавать права доступа явно, используются права по 
+умолчанию (для обычных файлов - 666, для каталогов и исполняемых файлов -
+ 777),
+к которым примеяется значение параметра <tt>umask</tt>. umask задает, 
+какие биты прав доступа нужно удалить (очистить) в правах доступа по 
+умолчанию
+при создании файла. Например, если права доступа на создаваемый файл по 
+умолчанию 666 (то есть rw-rw-rw-), и параметр umask равен 7, то 
+результирующие
+права доступа к созданному файлу будут равны 660 (rw-rw----). Получить 
+текущее значение параметра umask можно с помощью команды umask (без 
+аргументов),
+а установить - с помощью аргумента команды umask.</p>
+
+<p><b>Вопрос 11.</b>
+Какое значение umask у вас установлено? Как после применения umask изменятся права доступа 666 (rw-rw-rw-)?</p>
+
+<p><b>Вопрос 12.</b>
+Какое значение umask должно быть установлено, чтобы при создании файла с помощью команды</p>
+<pre>echo hello &gt;hell.txt</pre>
+<p>он получил права rw-r-----? Запишите команду, которая установит требуемое значение umask.</p>
+
+<p><b>Шаг 8.</b> Для смены прав доступа к файлам и каталогам используется
+команда chmod. Например,</p>
+<pre>chmod 700 newtask1</pre>
+<p>изменяет права доступа к каталогу newtask1 на восьмеричное значение 700.</p>
+
+<p><b>Вопрос 13.</b> Выполните изменение прав доступа к каталогу newtask1 так,
+чтобы права доступа описывались строкой rwxr-x---. Какова будет строка
+вывода команды ls -l, соответствующая каталогу newtask1?</p>
+
+
+<p><b>Шаг 9.</b> Для прерывания работы программы используется комбинация Ctrl-C.
+Команда cat без входных файлов считывает данные со стандартного потока ввода.</p>
+
+<p><b>Вопрос 14.</b>
+запустите команду</p>
+<pre>cat &gt; ~/file4</pre>
+<p>затем введите</p>
+<pre>abc</pre>
+<p>и нажмите Enter, затем введите</p>
+<pre>def</pre>
+<p>и нажмите Ctrl-C без нажатия Enter.
+Каков будет размер файла ~/file4?
+</p>
+
+<p><b>Вопрос 15.</b>
+Почему размер файла из вопроса 14 будет таким</p>
+
+<p><b>Шаг 10</b>. При вводе данных со стандартного потока ввода для завершения
+ввода используется комбинация Ctrl-D. Если курсор находится не в первой
+колонке терминала, Ctrl-D надо нажать дважды.</p>
+
+<p><b>Вопрос 16.</b>
+запустите команду</p>
+<pre>cat &gt; ~/file5</pre>
+<p>введите</p>
+<pre>1234</pre>
+<p>нажмите Enter и Ctrl-D,
+запустите команду</p>
+<pre>cat &gt; ~/file6</pre>
+<p>введите</p>
+<pre>1234</pre>
+<p>и, не нажимая Enter, нажмите Ctrl-D два раза.
+Каковы размеры файлов ~/file5 и ~/file6? Почему?</p>
+
+<p><b>Шаг 11.</b> Стандартный ввод программы можно перенаправить на чтение из
+файла. Для этого предназначена конструкция перенаправления &lt;.
+Конструкции перенаправления не считаются аргументами программы и
+не передаются в программу в качестве аргументов командной строки.Например:</p>
+<pre>cat &lt; /etc/passwd &gt;~/file7</pre>
+<p>перенаправит стандартный ввод программы cat на чтение из
+файла /etc/passwd, а стандартный вывод — на запись в файл ~/file7.
+Команда cat без аргументов считывает со стандартного потока ввода,
+таким образом, данная команда скопирует содержимое файла /etc/passwd
+в файл ~/file7.</p>
+
+<h3>Отчет о выполнении задания</h3>
+
+<p>Перед сдачей файла report.txt в тестирующую систему
+выполните следующую команду:</p>
+
+<pre>openssl dgst -sha256 -sign LOGIN.pem -hex &lt; report.txt &gt; sig.txt
+cat sig.txt &gt;&gt; report.txt</pre>
+
+<p>Здесь LOGIN.pem - приватный ключ (см. предыдущие задачи).
+В результате в конец файла report.txt будет дописана цифровая подпись.</p>
+
+<p>В тестирующую систему сдайте подписанный вами файл report.txt</p>
+
+    
+
+<p>&nbsp;</p><div id="ej-submit-tabs">
+
+<div id="ej-main-submit-tab">
+<h2>Previous submissions of this problem</h2>
+<table class="table"><tbody><tr><th class="b1">Run ID</th><th class="b1">Time</th><th class="b1">Size</th><th class="b1">Problem</th><th class="b1">Language</th><th class="b1">Result</th><th class="b1">Tests passed</th><th class="b1">Score</th><th class="b1">View source</th><th class="b1">View report</th></tr>
+<tr>
+<td class="b1">487</td><td class="b1">2022/09/12 12:04:16</td><td class="b1">1000</td><td class="b1">mz02-4</td><td class="b1">N/A</td><td class="b1">Wrong answer</td><td class="b1">0</td><td class="b1"><b>0</b></td><td class="b1"><a href="https://unicorn.ejudge.ru/ej/client/view-source/S7388ae11b0135f76?run_id=487">View</a></td><td class="b1"><a href="https://unicorn.ejudge.ru/ej/client/view-report/S7388ae11b0135f76?run_id=487">View</a></td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+
+
+
+
+</div></td><td class="b0" id="probNavRightList" valign="top"><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=1">mz01-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=2">mz01-2</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=3">mz01-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=4">mz01-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=5">mz01-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=6">mz01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=7">up01-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=8">up01-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=9">up01-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=10">up01-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=11">up01-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=12">up01-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=13">mz02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=14">mz02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=15">mz02-3</a></div><div class="probCurrent"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=16">mz02-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=17">mz02-5</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=18">mz02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=19">up02-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=20">up02-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=21">up02-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=22">up02-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=23">up02-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=24">up02-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=25">up02-7</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=26">mz03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=27">mz03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=28">mz03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=29">mz03-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=30">mz03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=31">up03-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=32">up03-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=33">up03-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=34">up03-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=35">up03-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=36">mz04-1</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=37">mz04-2</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=38">mz04-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=39">mz04-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=40">mz04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=41">mz04-6</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=42">up04-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=43">up04-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=44">up04-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=45">up04-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=46">up04-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=47">mz05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=48">mz05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=49">mz05-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=50">mz05-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=51">mz05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=52">up05-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=53">up05-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=54">up05-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=55">up05-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=56">up05-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=57">mz06-1</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=58">mz06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=59">mz06-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=60">mz06-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=61">mz06-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=62">up06-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=63">up06-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=64">up06-3</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=65">up06-4</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=66">up06-5</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=67">mz07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=68">mz07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=69">mz07-3</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=70">mz07-4</a></div><div class="probEmpty"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=71">mz07-5</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=72">up07-1</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=73">up07-2</a></div><div class="probOk"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=74">up07-3</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=75">up07-4</a></div><div class="probBad"><a class="tab" href="https://unicorn.ejudge.ru/ej/client/view-problem-submit/S7388ae11b0135f76?prob_id=76">up07-5</a></div></td></tr></tbody></table>
+<div id="footer"><p class="ejudge_copyright"><a href="https://ejudge.ru/">ejudge 3.9.1+ (GIT df344d5a9) (2022-10-20 15:37:20)</a>.</p>
+<p class="ejudge_copyright">Copyright © 2000-2022 Alexander Chernov.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>

@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Contest_10.dir/gdb-3-task/cJSON.c.o CMakeFiles/Contest_10.dir/gdb-3-task/task3.c.o -o Contest_10  -lm 
