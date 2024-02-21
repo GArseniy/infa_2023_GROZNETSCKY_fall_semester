@@ -1,1 +1,1 @@
-# infa_2023_GROZNETSCKY_fall_semester
+# 2023 MSU: Operating Systems course on C
